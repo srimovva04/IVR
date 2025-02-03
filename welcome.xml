@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>Press 1 to confirm your attendance or 2 to decline</Say>
+    <Gather numDigits="1" action="https://github.com/srimovva04/IVR/blob/master/handle-response.xml" method="POST">
+        <!-- Listen for a single digit -->
+    </Gather>
+    <Say>No input detected. Goodbye!</Say>
+</Response>
+
