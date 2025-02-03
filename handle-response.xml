@@ -1,0 +1,24 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Choice>
+        <Case value="1">
+            <Say>Thank you for your RSVP.</Say>
+        </Case>
+        <Case value="2">
+            <Say>Thank you for your response.</Say>
+        </Case>
+        <Default>
+            <Say>You did not press a valid key. Goodbye!</Say>
+        </Default>
+    </Choice>
+</Response> -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>
+        <If condition="'{{Digits}}' == '1'">Thank you for your RSVP.</If>
+        <If condition="'{{Digits}}' == '2'">Thank you for your response.</If>
+        <If condition="'{{Digits}}' != '1' && '{{Digits}}' != '2'">You did not press a valid key. Goodbye!</If>
+    </Say>
+</Response>w
